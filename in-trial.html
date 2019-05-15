@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Input with Icon Example
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .icon-input {
+      width: 100%;
+      border: 1px solid #E6E6E6;
+      margin: 8px 0;
+      outline: none;
+      padding: 8px 0px 8px 35px;
+      transition: 0.3s;
+    }
+
+
+    .icon-input-container {
+      position: relative;
+    }
+
+    .icon-email {
+      width: 15px;
+      height: 15px;
+      background: url("email.svg") no-repeat;
+      background-size: contain;
+    }
+
+    .icon-lock {
+      width: 15px;
+      height: 15px;
+      background: url("lock.svg") no-repeat;
+      background-size: contain;
+    }
+
+    .icon-container {
+      position: absolute;
+      top: 8px;
+      padding: 10px 0px 0px 10px;
+      transition: 0.3s;
+      color: #373737;
+      border-right: 1px solid #E6E6E6;
+      width: 23px;
+      height: 23px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="icon-input-container">
+    <input class="icon-input" type="text" placeholder="Email">
+    <div class="icon-container">
+      <div class="icon-email"></div>
+    </div>
+  </div>
+
+  <div class="icon-input-container">
+      <input class="icon-input" type="password" placeholder="Password">
+      <div class="icon-container">
+        <div class="icon-lock"></div>
+      </div>
+    </div>
+  .icon-input-container
+    %input.icon-input{:placeholder => "Email", :type => "text"}
+    .icon-container
+      .icon-email
+  
+</body>
+
+</html>
